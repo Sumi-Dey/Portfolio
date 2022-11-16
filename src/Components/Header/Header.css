@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+
+.left-header {
+    flex: 1;
+    color: white;
+    position: relative;
+    left: 6rem;
+    font-family: "Sofia", sans-serif;
+    font-size: 2rem;
+}
+
+.right-header {
+    flex: 3;
+    display: block;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: relative;
+    left: 22rem;
+    color: white;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 1rem;
+}
+
+.header-menu>li {
+    cursor: pointer;
+}
+.header-menu>li:hover{
+    color: crimson;
+}
+
+.bg-color {
+    background-color: crimson;
+}
+
+.bg-white {
+    background-color: darkgray;
+}
+
+.icon {
+    display: none;
+}
+.active {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Gentium Book Plus', serif;
+    list-style: none;
+    transition: width  2s ease;
+}
+.active li{
+    color: white;
+    margin: 2rem 0;
+}
+.active li:hover{
+    color: crimson;
+}
+ 
+
+
+@media screen and (max-width: 1024px) {
+    .header-menu {
+        position: relative;
+        left: 9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icon {
+        display: block;
+        position: relative;
+        top: 1rem;
+        left: 24.5rem;
+        color: white;
+    }
+    .header-menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px){
+    .icon{
+        display: block;
+        position: relative;
+        top: 1rem;
+        left: 8rem;
+        color: white;
+    }
+    .left-header{
+        left: 2rem;
+    }
+}
+
+
