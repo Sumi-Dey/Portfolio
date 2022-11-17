@@ -42,3 +42,12 @@
 .work-active-content{
     display: block;
 }
+@media screen and (max-width: 425px){
+    .myWork {
+        display: block;
+        padding: 3rem 0;
+    }
+    .right-myWork{
+        text-align: center;
+    }
+}

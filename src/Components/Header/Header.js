@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Header.css';
 import {FaBars} from 'react-icons/fa'
 
@@ -13,6 +13,15 @@ const Header = () => {
       setScroll(window.scrollY>20);
     })
   },[]);
+  useEffect(()=>{
+    document.addEventListener("click",handleOutside,true)
+  },[])
+  const refOne = useRef(null);
+  const handleOutside = (e)=>{
+    if (!refOne.current.contains(e.targer)) {
+      setMenu(false)
+    }
+  }
   return (
     <div className={scroll?"bg-color header":"bg-white header"}  style={{position:"fixed"}} >
       <div className='left-header'><span>Portfolio</span></div>
@@ -24,7 +33,7 @@ const Header = () => {
             <li>My Work</li>
             <li>Contact Us</li>
         </ul>
-          <div className='icon'><FaBars size={20} onClick={()=>menuFunc()} /></div>  
+          <div className='icon' ref={refOne} ><FaBars size={20} onClick={()=>menuFunc()} /></div>  
       </div>
     </div>
   )

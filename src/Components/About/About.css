@@ -84,8 +84,9 @@
 .redux{
     width: 80%;
 }
-@keyframes progress {
-    from {
-        width: 0;
+@media screen and (max-width: 425px){
+    .about{
+        display: block;
+        padding: 3rem 0;
     }
 }
