@@ -1,7 +1,13 @@
+import FileSaver from 'file-saver';
 import React from 'react';
 import './Home.css'
 
 const Home = () => {
+    const saveFile = ()=>{
+        FileSaver.saveAs(
+            process.env.REACT_APP_CLIENT_URL + "public/assets/Sumi's Resume.pdf","Sumi's Resume.pdf"
+        )
+    }
     return (
         <div className='home'>
             <div>
@@ -9,11 +15,11 @@ const Home = () => {
                 <span>Developer</span>
 
                 <div>
-                    <button className='cv'>Download CV</button>
+                    <button className='cv' onClick={()=>saveFile()} >Download CV</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Home
+export default Home;
