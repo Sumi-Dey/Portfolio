@@ -1,0 +1,55 @@
+.myWork {
+    display: flex;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.left-myWork {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Fragment Mono', monospace;
+    padding-top: 1rem;
+}
+.right-myWork{
+    flex: 3;
+    padding-top: 1.5rem;
+}
+
+.work-container{
+    display: flex;
+    gap: 3rem;
+}
+.work-container div{
+    font-family: 'Fragment Mono', monospace;
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+}
+.work-container div:hover{
+    cursor: pointer;
+    color: crimson;
+    font-weight: bold;
+    border-bottom: 2px solid crimson;
+}
+.items img{
+    width: 20.7rem;
+    height: 14.5rem;
+}
+.items{
+    display: none;
+}
+.work-active-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+@media screen and (max-width: 425px){
+    .myWork {
+        display: block;
+        padding: 3rem 0;
+    }
+    .right-myWork{
+        text-align: center;
+    }
+}

@@ -1,0 +1,92 @@
+.about {
+    display: flex;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.left-about {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Fragment Mono', monospace;
+    padding-top: 1rem;
+}
+
+.right-about {
+    flex: 3;
+    font-size: 0.9rem;
+}
+
+.option-titles {
+    display: flex;
+    gap: 4rem;
+    font-weight: bold;
+}
+
+.option-links:hover {
+    color: crimson;
+    border-bottom: 2.5px solid crimson;
+}
+
+.option-links {
+    cursor: pointer;
+}
+
+.option-contents ul li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.option-contents {
+    display: none;
+    width: 25rem;
+}
+
+.option-contents ul li span {
+    color: crimson;
+    font-weight: bold;
+}
+
+.active-content {
+    display: block;
+}
+
+.container {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+    margin: 8px 0;
+}
+
+.skill {
+    background-color: rgb(91, 24, 185);
+    padding: 1%;
+    border-radius: 15px;
+    height: 5px;
+    transition: width 2s;
+}
+.skill:hover{
+    width: 100%;
+}
+.html{
+    width: 100%;
+}
+.css{
+    width: 95%;
+}
+.JS{
+    width: 90%;
+}
+.react{
+    width: 85%;
+}
+.redux{
+    width: 80%;
+}
+@media screen and (max-width: 425px){
+    .about{
+        display: block;
+        padding: 3rem 0;
+    }
+}

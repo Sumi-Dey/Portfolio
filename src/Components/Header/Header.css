@@ -1,0 +1,40 @@
+.header{   
+    display: flex;
+    justify-content: space-between;
+    padding: 5.3px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.nonScrollHeader{
+    background-color: #121111;
+    color: white;
+}
+.scrollingHeader{
+    background-color: crimson;
+    color: white;
+}
+.left-header{
+    font-size: 30px;
+    font-family: "Sofia", sans-serif;
+}
+.right-header{
+    display: flex;
+    gap: 31px;
+    align-items: center;
+}
+.right-header>div:hover{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* RESPONSIVE ***********************************/
+
+@media screen and (max-width:768px) {
+    .header{
+        padding: 5.3px 25.4px;
+    }
+    .right-header{
+        gap: 21px;
+    }
+}
