@@ -1,16 +1,19 @@
-.home{
+.home {
     position: relative;
 }
-.proPic{
+
+.proPic {
     width: 150px;
     border-radius: 50%;
     box-shadow: 0px 0px 10px 10.2px #212020;
 }
-.proImg{
+
+.proImg {
     width: 100%;
     max-height: 30rem;
 }
-.name{
+
+.name {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,19 +23,23 @@
     top: 5.3rem;
     left: 31.1rem;
 }
-.details{
+
+.details {
     line-height: 50px;
     text-align: center;
 }
-.details>span:nth-of-type(1){
+
+.details>span:nth-of-type(1) {
     font-size: 2.5rem;
     font-family: 'Fragment Mono', monospace;
 }
-.details>span:nth-of-type(2){
+
+.details>span:nth-of-type(2) {
     font-size: 3.2rem;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.cv{
+
+.cv {
     background-color: crimson;
     color: white;
     border: none;
@@ -42,35 +49,55 @@
     cursor: pointer;
 }
 
-
-
-
-
-/* .home{
-    background-color: darkgray;
-    min-height: 20rem;
-    text-align: center;
+/* RESPONSIVE *********************/
+@media screen and (max-width:1024px) {
+    .name {
+        left: 21.8rem;
+    }
 }
-.home>div:nth-of-type(1){
-    position: relative;
-    top: 5rem;
-    font-size: 2.5rem;
-    color: white;
+
+@media screen and (max-width:1024px) {
+    .name {
+        left: 13.6rem;
+    }
 }
-.home>div>span:nth-of-type(1){
-    font-family: 'Fragment Mono', monospace;
+
+@media screen and (max-width:425px) {
+    .cv {
+        height: 2rem;
+        width: 6.4rem;
+    }
+    .details>span:nth-of-type(2) {
+        font-size: 1.3rem;
+    }
+    .details>span:nth-of-type(1) {
+        font-size: 1.4rem;
+    }
+    .details {
+        line-height: 20px;
+    }
+    .proPic {
+        width: 90px;
+    }
+    .name{
+        left: 7.6rem;
+        top: 0.8rem;
+    }
 }
-.home>div>span:nth-of-type(2){
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 3rem;
-    line-height: 5rem;
+@media screen and (max-width:365px){
+    .name{
+        left: 5.1;
+    }
 }
-.cv{
-    background-color: crimson;
-    color: white;
-    border: none;
-    height: 2.5rem;
-    width: 10rem;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
-} */
+@media screen and (max-width:320px){
+    .name{
+        left: 4.2rem;
+        top: 0.3rem;
+    }
+    .proPic {
+        width: 70px;
+    }
+    .cv{
+        width: 5.4rem;
+    }
+}

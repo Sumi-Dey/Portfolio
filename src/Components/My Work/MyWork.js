@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import './MyWork.css';
 import HotelSS from '../../Assets/HotelSS.png';
 import SbagsSS from '../../Assets/SbagsSS.png';
+import IcoderSS from '../../Assets/IcoderSS.png';
+import LibrarySS from '../../Assets/LibrarySS.png';
+import PosterSS from '../../Assets/PosterSS.jpg';
 
 const MyWork = () => {
     const [content,setContent] = useState(true)
@@ -34,20 +37,20 @@ const MyWork = () => {
                     <div onClick={()=>contentFunc3()}>design</div>
                 </div>
                 <div className={`items ${content?"work-active-content":""}`}>
-                    <img src={SbagsSS} alt='...' />
-                    <img src={HotelSS} alt='...' />
-                    <img src='https://img.freepik.com/free-vector/various-screens-violet-public-transport-mobile-app_23-2148704862.jpg?w=2000' alt='...' />
-                    <img src='https://w3layouts.com/wp-content/uploads/2020/06/mastery.jpg' alt='...' />
-                    <img src='https://cdn.dribbble.com/users/1756963/screenshots/17359662/media/1a020aaaf8e1dfabf63ecef866a3d3ab.png?compress=1&resize=400x300' alt='...' />
+                  <a href='https://shopping-cart-eight-liard.vercel.app/' target='_blank'><img src={SbagsSS} alt='...' /></a> 
+                  <a href='https://github.com/Sumi-Dey/Hotel-Booking-Website' target='_blank'><img src={HotelSS} alt='...' /> </a>
+                    <a href='https://github.com/Sumi-Dey/iCoder' target='_blank'><img src={IcoderSS} alt='...' /></a>
+                    <a href='https://github.com/Sumi-Dey/Library' target='_blank'><img src={LibrarySS} alt='...' /></a>
+                    <img src={PosterSS} alt='...' />
                 </div>
                 <div className={`items ${content2?"work-active-content":""}`}>
-                    <img src={HotelSS} alt='...' />
-                    <img src={SbagsSS} alt='...' />
+                <a href='https://shopping-cart-eight-liard.vercel.app/' target='_blank'><img src={SbagsSS} alt='...' /></a> 
+                  <a href='https://github.com/Sumi-Dey/Hotel-Booking-Website' target='_blank'><img src={HotelSS} alt='...' /> </a>
+                    <a href='https://github.com/Sumi-Dey/iCoder' target='_blank'><img src={IcoderSS} alt='...' /></a>
+                    <a href='https://github.com/Sumi-Dey/Library' target='_blank'><img src={LibrarySS} alt='...' /></a>
                 </div>
                 <div className={`items ${content3?"work-active-content":""}`}>
-                    <img src={HotelSS} alt='...' />
-                    <img src='https://img.freepik.com/free-vector/various-screens-violet-public-transport-mobile-app_23-2148704862.jpg?w=2000' alt='...' />
-                    <img src='https://cdn.dribbble.com/users/1756963/screenshots/17359662/media/1a020aaaf8e1dfabf63ecef866a3d3ab.png?compress=1&resize=400x300' alt='...' />
+                <img src={PosterSS} alt='...' />
                 </div>
             </div>
         </div>

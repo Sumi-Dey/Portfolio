@@ -17,7 +17,10 @@
     flex: 3;
     font-size: 0.9rem;
 }
-
+.right-about>p{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 22px;
+}
 .option-titles {
     display: flex;
     gap: 4rem;
@@ -31,6 +34,8 @@
 
 .option-links {
     cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
 }
 
 .option-contents ul li {
@@ -40,7 +45,8 @@
 
 .option-contents {
     display: none;
-    width: 25rem;
+    width: 21.6rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .option-contents ul li span {

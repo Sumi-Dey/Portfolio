@@ -21,9 +21,12 @@
     border-radius: 1rem;
     background-color: lightgray;
     padding: 1rem;
+    cursor: pointer;
 }
 .card p {
     font-size: 14.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 22px;
 }
 .card:hover{
     background-color: crimson;

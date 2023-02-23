@@ -27,6 +27,24 @@
     font-weight: 500;
     cursor: pointer;
 }
+.menubar{
+    display: none;
+}
+.menu-icon{
+    cursor: pointer;
+    position: relative;
+}
+.menu-list{
+    position: absolute;
+    top: 54.5px;
+    right: 2.9px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #121111;
+    padding: 10px 30px;
+    align-items: center;
+}
 
 /* RESPONSIVE ***********************************/
 
@@ -36,5 +54,17 @@
     }
     .right-header{
         gap: 21px;
+    }
+    
+}
+@media screen and (max-width:425px){
+    .right-header{
+        display: none;
+    }
+    .header{
+        align-items: center;
+    }
+    .menubar{
+        display: inline;
     }
 }

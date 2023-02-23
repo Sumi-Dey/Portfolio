@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div>
-        <BsFacebook size={30} style={{padding:"0 1rem",color:"white"}} />
-        <AiFillLinkedin size={30} style={{padding:"0 1rem",color:"white"}}/>
-        <BsGithub size={30} style={{padding:"0 1rem",color:"white"}}/>
+        <a href='/'><BsFacebook size={30} style={{padding:"0 1rem",color:"white"}} /></a>
+        <a href='https://www.linkedin.com/in/sumi-dey-01332a234/' target='_blank'><AiFillLinkedin size={30} style={{padding:"0 1rem",color:"white"}}/></a>
+        <a href='https://github.com/Sumi-Dey' target='_blank'><BsGithub size={30} style={{padding:"0 1rem",color:"white"}}/></a>
         <AiFillInstagram size={30} style={{padding:"0 1rem",color:"white"}}/>
       </div>
     </div>
