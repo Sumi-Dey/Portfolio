@@ -33,33 +33,50 @@ const About = () => {
                     <p className='option-links' onClick={() => optionFunc3()}>Education</p>
                 </div>
                 <div className={`option-contents ${option ? "active-content" : ""}`}  >
-                    <ul>
-                        <li><span>HTML</span><br />
-                            <div className='container'>
-                                <div className='skill html'></div>
+                    <div className='skills'>
+                        <div className="progress-bar-container">
+                            <h2>HTML</h2>
+                            <div className="progress-bar">
+                                <span className="percentage html"></span>
                             </div>
-                        </li>
-                        <li><span>CSS</span><br />
-                        <div className='container'>
-                                <div className='skill css'></div>
+                        </div>
+                        <div className="progress-bar-container">
+                            <h2>CSS</h2>
+                            <div className="progress-bar">
+                                <span className="percentage css"></span>
                             </div>
-                        </li>
-                        <li><span>Javascript</span><br />
-                        <div className='container'>
-                                <div className='skill JS'></div>
+                        </div>
+                        <div className="progress-bar-container">
+                            <h2>Javascript</h2>
+                            <div className="progress-bar">
+                                <span className="percentage JS"></span>
                             </div>
-                        </li>
-                        <li><span>React</span><br />
-                        <div className='container'>
-                                <div className='skill react'></div>
+                        </div>
+                        <div className="progress-bar-container">
+                            <h2>React JS</h2>
+                            <div className="progress-bar">
+                                <span className="percentage react"></span>
                             </div>
-                        </li>
-                        <li><span>Redux</span><br />
-                        <div className='container'>
-                                <div className='skill redux'></div>
+                        </div>
+                        <div className="progress-bar-container">
+                            <h2>Node JS</h2>
+                            <div className="progress-bar">
+                                <span className="percentage node"></span>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                        <div className="progress-bar-container">
+                            <h2>Express JS</h2>
+                            <div className="progress-bar">
+                                <span className="percentage express"></span>
+                            </div>
+                        </div>
+                        <div className="progress-bar-container">
+                            <h2>MongoDB</h2>
+                            <div className="progress-bar">
+                                <span className="percentage mongo"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className={`option-contents ${option2 ? "active-content" : ""}`}>
                     <ul>
@@ -69,9 +86,9 @@ const About = () => {
                 </div>
                 <div className={`option-contents ${option3 ? "active-content" : ""}`}>
                     <ul>
-                        <li><span>Calcutta University</span><br/>BSc. Hons.<br />2017-2020</li>
-                        <li><span>S.S.K.M</span><br/>Completed Higher Secondary Education<br />2017-2020</li>
-                        <li><span>S.S.K.M</span><br/>Completed Secondary Education<br />2015-2017</li>
+                        <li><span>Calcutta University</span><br />BSc. Hons.<br />2017-2020</li>
+                        <li><span>S.S.K.M</span><br />Completed Higher Secondary Education<br />2017-2020</li>
+                        <li><span>S.S.K.M</span><br />Completed Secondary Education<br />2015-2017</li>
                     </ul>
                 </div>
             </div>

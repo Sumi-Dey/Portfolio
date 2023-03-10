@@ -26,7 +26,7 @@ const MyWork = () => {
         setContent3(true)
     }
     return (
-        <div className='myWork'>
+        <div className='myWork' id='my-work'>
             <div className='left-myWork'>
                 my work
             </div>
@@ -38,14 +38,14 @@ const MyWork = () => {
                 </div>
                 <div className={`items ${content?"work-active-content":""}`}>
                   <a href='https://shopping-cart-eight-liard.vercel.app/' target='_blank'><img src={SbagsSS} alt='...' /></a> 
-                  <a href='https://github.com/Sumi-Dey/Hotel-Booking-Website' target='_blank'><img src={HotelSS} alt='...' /> </a>
+                  <a href='https://frontend-swart-alpha.vercel.app/' target='_blank'><img src={HotelSS} alt='...' /> </a>
                     <a href='https://github.com/Sumi-Dey/iCoder' target='_blank'><img src={IcoderSS} alt='...' /></a>
                     <a href='https://github.com/Sumi-Dey/Library' target='_blank'><img src={LibrarySS} alt='...' /></a>
                     <img src={PosterSS} alt='...' />
                 </div>
                 <div className={`items ${content2?"work-active-content":""}`}>
                 <a href='https://shopping-cart-eight-liard.vercel.app/' target='_blank'><img src={SbagsSS} alt='...' /></a> 
-                  <a href='https://github.com/Sumi-Dey/Hotel-Booking-Website' target='_blank'><img src={HotelSS} alt='...' /> </a>
+                  <a href='https://frontend-swart-alpha.vercel.app/' target='_blank'><img src={HotelSS} alt='...' /> </a>
                     <a href='https://github.com/Sumi-Dey/iCoder' target='_blank'><img src={IcoderSS} alt='...' /></a>
                     <a href='https://github.com/Sumi-Dey/Library' target='_blank'><img src={LibrarySS} alt='...' /></a>
                 </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import './Header.css';
 import { FaBars } from 'react-icons/fa'
 import useOnClickOutside from '../../hooks/OnClickOutside';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
   }, [])
   const refOne = useRef(null);
   const handleOutside = (e) => {
-    if (!refOne.current.contains(e.targer)) {
+    if (!refOne.current.contains(e.target.value)) {
       setMenu(false)
     }
   }
@@ -30,7 +31,7 @@ const Header = () => {
       <div className='left-header'>Portfolio</div>
       <div className='menubar' ref={ref}> <FaBars className='menu-icon' size={20} onClick={()=>{setMenu(true)}} />
         {menu && <div className='menu-list'  >
-          <div>Home</div>
+          <div>Home</div> 
           <div>About</div>
           <div>Services</div>
           <div>My Work</div>

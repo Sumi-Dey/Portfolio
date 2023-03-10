@@ -37,11 +37,11 @@
     font-family: 'Bree Serif', serif;
     font-size: 16px;
 }
-
+/* 
 .option-contents ul li {
     list-style: none;
     margin: 1rem 0;
-}
+} */
 
 .option-contents {
     display: none;
@@ -72,6 +72,36 @@
     height: 5px;
     transition: width 2s;
 }
+.progress-bar-container:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Styling the h2 tag by giving color,
+letter spacing, font-size etc.*/
+.progress-bar-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+
+/* Styling the border and box
+effect of the progress bar*/
+.progress-bar {
+    width: 300px;
+    height: 5px;
+    margin-top: 10px;
+    border: 1px solid #565656;
+    border-radius: 5px;
+}
+/* Stylingthe background color of each
+        animation and border radius */
+        .percentage {
+            display: block;
+            height: 100%;
+            background-color: rgb(91, 24, 185);
+            border-radius: 5px;
+            animation: progress 1500ms ease-in 1;
+        }
 .skill:hover{
     width: 100%;
 }
@@ -87,12 +117,30 @@
 .react{
     width: 85%;
 }
-.redux{
-    width: 80%;
+.node{
+    width: 40%;
 }
+.express{
+    width: 35%;
+}
+.mongo{
+    width: 35%;
+}
+/* Animating the progress bar by
+        initially starting from 0*/
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+        }
 @media screen and (max-width: 425px){
     .about{
         display: block;
         padding: 3rem 0;
+    }
+}
+@media screen and (max-width: 320px){
+    .option-contents{
+        width: 11.6rem;
     }
 }

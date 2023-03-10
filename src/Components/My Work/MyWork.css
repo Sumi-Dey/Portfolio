@@ -44,6 +44,13 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+@media screen and (max-width: 768px){
+    .items img {
+        width: 15rem;
+        height: 11.7rem;
+    }
+}
 @media screen and (max-width: 425px){
     .myWork {
         display: block;
@@ -53,4 +60,18 @@
         text-align: center;
         
     }
+    .items img {
+        width: 12.8rem;
+        height: 10.5rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+.items img {
+    width: 9.8rem;
+    height: 9.2rem;
+}
+.work-active-content{
+    gap: 5px;
+}
 }
