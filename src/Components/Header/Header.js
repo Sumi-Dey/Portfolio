@@ -3,27 +3,23 @@ import './Header.css';
 import { FaBars } from 'react-icons/fa'
 import useOnClickOutside from '../../hooks/OnClickOutside';
 import { Link } from 'react-router-dom';
-
 const Header = () => {
   const [menu, setMenu] = useState(false);
-  const menuFunc = () => {
-    setMenu(true);
-  }
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 20);
     })
   }, []);
-  useEffect(() => {
-    document.addEventListener("click", handleOutside, true)
-  }, [])
-  const refOne = useRef(null);
-  const handleOutside = (e) => {
-    if (!refOne.current.contains(e.target.value)) {
-      setMenu(false)
-    }
-  }
+  // useEffect(() => {
+  //   document.addEventListener("click", handleOutside, true)
+  // }, [])
+  // const refOne = useRef(null);
+  // const handleOutside = (e) => {
+  //   if (!refOne.current.contains(e.target.value)) {
+  //     setMenu(false)
+  //   }
+  // }
   const ref = useRef();
   useOnClickOutside(ref, () => setMenu(false))
   return (
@@ -31,7 +27,7 @@ const Header = () => {
       <div className='left-header'>Portfolio</div>
       <div className='menubar' ref={ref}> <FaBars className='menu-icon' size={20} onClick={()=>{setMenu(true)}} />
         {menu && <div className='menu-list'  >
-          <div>Home</div> 
+        <Link to='/#my-work'><div>Home</div> </Link>
           <div>About</div>
           <div>Services</div>
           <div>My Work</div>

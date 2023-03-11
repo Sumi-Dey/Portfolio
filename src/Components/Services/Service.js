@@ -8,7 +8,7 @@ import {SlMagnifier} from 'react-icons/sl';
 const Service = () => {
     
   return (
-    <div className='service'>
+    <div className='service' id='services'>
       <div className='left-service'>
         Services
       </div>
@@ -20,8 +20,8 @@ const Service = () => {
         </div>
         <div className='card'>
             <h4><SlMagnifier size={40} /></h4>
-            <h4>SEO</h4>
-            <p>I have created the website with SEO.I have some knowledge of SEO and try to apply it in my projects.</p>
+            <h4>Blog</h4>
+            <p>I have authored several blog articles on various topics of React JS that showcase my writing skills and knowledge in my field.</p>
         </div>
         <div className='card'>
             <h4><MdOutlineDesignServices size={40} /></h4>

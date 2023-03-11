@@ -12,66 +12,72 @@
     font-family: 'Fragment Mono', monospace;
     padding-top: 1rem;
 }
-.right-myWork{
+
+.right-myWork {
     flex: 3;
     padding-top: 1.5rem;
 }
 
-.work-container{
+.work-container {
     display: flex;
     gap: 3rem;
 }
-.work-container div{
+
+.work-container div {
     font-family: 'Fragment Mono', monospace;
     font-size: 15px;
     margin-bottom: 1.5rem;
 }
-.work-container div:hover{
+
+.work-container div:hover {
     cursor: pointer;
     color: crimson;
     font-weight: bold;
     border-bottom: 2px solid crimson;
 }
-.items img{
+
+.items img {
     width: 19rem;
     height: 14.5rem;
+    border: 2px solid #9b9494;
 }
-.items{
+
+.items {
     display: none;
 }
-.work-active-content{
+
+.work-active-content {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .items img {
         width: 15rem;
         height: 11.7rem;
     }
 }
-@media screen and (max-width: 425px){
+
+@media screen and (max-width: 425px) {
     .myWork {
         display: block;
         padding: 3rem 0;
     }
-    .right-myWork{
-        text-align: center;
-        
-    }
-    .items img {
-        width: 12.8rem;
-        height: 10.5rem;
-    }
-}
 
-@media screen and (max-width: 425px){
-.items img {
-    width: 9.8rem;
-    height: 9.2rem;
-}
-.work-active-content{
-    gap: 5px;
-}
+    .right-myWork {
+        text-align: center;
+
+    }
+
+    .items img {
+        width: 9.5rem;
+        height: 9rem;
+    }
+    .work-active-content {
+        gap: 5px;
+    }
+    .work-container{
+        gap:2rem ;
+    }
 }
