@@ -25,9 +25,9 @@ const Header = () => {
   return (
     <div className={scroll ? "header scrollingHeader" : "header nonScrollHeader"}>
       <div className='left-header'>Portfolio</div>
-      <div className='menubar' ref={ref}> <FaBars className='menu-icon' size={20} onClick={()=>{setMenu(true)}} />
+      <div className='menubar' ref={ref}> <FaBars className='menu-icon' size={20} onClick={() => { setMenu(true) }} />
         {menu && <div className='menu-list'  >
-        <Link to='/#my-work'><div>Home</div> </Link>
+          <div>Home</div>
           <div>About</div>
           <div>Services</div>
           <div>My Work</div>
