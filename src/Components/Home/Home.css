@@ -90,6 +90,10 @@
         top: 0.8rem;
     }
 }
+.no-img{
+    background-color: #212020;
+    height: 450px;
+}
 @media screen and (max-width:375px){
     .name{
         left: 5.7;

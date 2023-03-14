@@ -16,7 +16,8 @@ const Home = () => {
     return (
         <div className='home'>
             <div>
-                <img src={profileCover} className='proImg' alt='...' />
+                {profileCover?(<img src={profileCover} className='proImg' alt='...' />):(
+                <div className='no-img'></div>)}
                 <div className='name'>
                     <div><img src={proPic} className='proPic' alt='...' /></div>
                     <div className='details'><span>I'm Sumi Dey, a</span><br />
