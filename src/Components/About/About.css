@@ -66,7 +66,7 @@
 }
 
 .skill {
-    background-color: rgb(91, 24, 185);
+    background-color: crimson;
     padding: 1%;
     border-radius: 15px;
     height: 5px;
@@ -98,7 +98,7 @@ effect of the progress bar*/
         .percentage {
             display: block;
             height: 100%;
-            background-color: rgb(91, 24, 185);
+            background-color: crimson;
             border-radius: 5px;
             animation: progress 1500ms ease-in 1;
         }
@@ -138,9 +138,21 @@ effect of the progress bar*/
         display: block;
         padding: 3rem 0;
     }
+    .right-about{
+        margin: 0 20px;
+    }
 }
 @media screen and (max-width: 320px){
     .option-contents{
         width: 11.6rem;
+    }
+    .option-titles{
+        gap: 3.1rem;
+    }
+    .right-about{
+        margin: 0 11.1px;
+    }
+    .progress-bar{
+        width: 280px;
     }
 }

@@ -37,14 +37,24 @@
 }
 .menu-list{
     position: absolute;
-    top: 54.5px;
-    right: 2.9px;
+    top: 60.5px;
+    border-radius: 5px;
+    right: 3.6px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #121111;
-    padding: 10px 30px;
+    padding: 20px 30px;
     align-items: center;
+}
+.menu-list>div:hover{
+    font-weight: 500;
+    cursor: pointer;
+}
+.scrollingMenu{
+    background-color: crimson;
+}
+.nonScrollingMenu{
+    background-color: #121111;
 }
 
 /* RESPONSIVE ***********************************/

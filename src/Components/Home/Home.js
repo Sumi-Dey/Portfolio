@@ -21,12 +21,12 @@ const Home = () => {
                     <div><img src={proPic} className='proPic' alt='...' /></div>
                     <div className='details'><span>I'm Sumi Dey, a</span><br />
                         <span>
-                            <Typing speed={100}
+                            <Typing speed={90} typingDelay={100}
                                 text={['Developer', 'Designer', 'Editor']} />
                         </span>
                     </div>
                     <div>
-                        <button className='cv' onClick={handleDownload} >Download CV</button>
+                        <button className='cv' onClick={handleDownload}> Download CV</button>
                     </div>
                 </div>
             </div>

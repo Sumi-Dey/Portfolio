@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import './Header.css';
 import { FaBars } from 'react-icons/fa'
 import useOnClickOutside from '../../hooks/OnClickOutside';
-import { Link } from 'react-router-dom';
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -26,7 +25,7 @@ const Header = () => {
     <div className={scroll ? "header scrollingHeader" : "header nonScrollHeader"}>
       <div className='left-header'>Portfolio</div>
       <div className='menubar' ref={ref}> <FaBars className='menu-icon' size={20} onClick={() => { setMenu(true) }} />
-        {menu && <div className='menu-list'  >
+        {menu && <div className={scroll?"menu-list scrollingMenu":"menu-list nonScrollingMenu"}  >
           <div>Home</div>
           <div>About</div>
           <div>Services</div>

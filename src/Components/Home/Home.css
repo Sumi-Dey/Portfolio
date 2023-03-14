@@ -86,13 +86,13 @@
         width: 90px;
     }
     .name{
-        left: 5.4rem;
+        left: 7.3rem;
         top: 0.8rem;
     }
 }
 @media screen and (max-width:375px){
     .name{
-        left: 5.9;
+        left: 5.7;
     }
 }
 @media screen and (max-width:320px){
