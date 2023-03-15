@@ -23,7 +23,7 @@
 }
 
 .email-inputs> div:nth-of-type(1){
-   width: 40%; 
+   width: 50%; 
 }
 .email-inputs> div:nth-of-type(2){
     width: 50%;
@@ -57,7 +57,17 @@
     cursor: pointer;
     margin: 10px 0;
 }
-@media screen and (max-width: 425px){
+@media screen and (max-width: 1024px){
+    .email-inputs div:nth-of-type(1){
+        width: 43.5%; 
+     }
+}
+@media screen and (max-width: 1024px){
+    .email-inputs div:nth-of-type(1){
+        width: 42.7%; 
+     }
+}
+@media screen and (max-width: 600px){
     .contact {
         display: block;
         padding: 3rem 0;
@@ -67,11 +77,11 @@
         align-items: center;
         text-align: center;
     }
-    .right-contact div:nth-of-type(1){
-        width: 90%; 
+    .email-inputs div:nth-of-type(1){
+        width: 95.3%; 
      }
-     .right-contact div:nth-of-type(2){
-         width: 90%;
+     .email-inputs div:nth-of-type(2){
+         width: 95.3%;
      
      }
      .textarea{
