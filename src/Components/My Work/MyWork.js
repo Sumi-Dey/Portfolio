@@ -41,8 +41,26 @@ const MyWork = () => {
         setContent4(true)
     }
 
+    const reveal = () => {
+        const reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveals[i].getBoundingClientRect().top;
+            const elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll reveal", reveal);
+
     return (
-        <div className='myWork' id='my-work'>
+        <div className='myWork reveal' id='my-work'>
             <div className='left-myWork'>
                 my work
             </div>

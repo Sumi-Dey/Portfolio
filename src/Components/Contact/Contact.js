@@ -24,9 +24,27 @@ const Contact = () => {
 
         e.target.reset();
     }
+
+    const reveal = () => {
+        const reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveals[i].getBoundingClientRect().top;
+            const elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
     
     return (
-        <div className='contact'>
+        <div className='contact reveal'>
             {message && <div className='alert'>You successfuly send the message<div className='close' onClick={()=>setMessage(false)}><AiFillCloseCircle /></div></div>}
             {error && <div className='alert'>Sorry there is some error please try once<div className='close' onClick={()=>setError(false)}><AiFillCloseCircle /></div></div>}
             <div className='left-contact'>
