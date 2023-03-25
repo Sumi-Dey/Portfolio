@@ -5,6 +5,7 @@ import SbagsSS from '../../Assets/SbagsSS.png';
 import IcoderSS from '../../Assets/IcoderSS.png';
 import LibrarySS from '../../Assets/LibrarySS.png';
 import PosterSS from '../../Assets/PosterSS.jpg';
+import redux from '../../Assets/redux.jpg';
 import VS from '../../Assets/VS.png';
 import code from '../../Assets/codeSplitting.png';
 import { Link } from 'react-router-dom';
@@ -68,6 +69,7 @@ const MyWork = () => {
                 <div className={`items ${content4 ? "work-active-content" : ""}`}>
                     <Link to="https://sumideycodingblog.hashnode.dev/usecallback-vs-usememo"><img src={VS} alt='...' /></Link>
                     <Link to="https://sumideycodingblog.hashnode.dev/code-splitting"><img src={code} alt='...' /></Link>
+                    <Link to="https://sumideycodingblog.hashnode.dev/getting-started-with-redux"><img src={redux} alt='...' /></Link>
                 </div>
                 <div className={`items ${content3 ? "work-active-content" : ""}`}>
                     <img src={PosterSS} alt='...' />

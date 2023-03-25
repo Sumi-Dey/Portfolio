@@ -1,22 +1,34 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
+import {AiFillCloseCircle} from 'react-icons/ai';
 
 const Contact = () => {
-    const form = useRef()
+    const [message,setMessage] = useState(false)
+    const [error,setError] = useState(false)
+     const form = useRef()
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_u253u13', 'template_oy4o3pf', form.current, 'fzVaCt6e75eRR8929')
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_USER_ID)
             .then((result) => {
-                console.log(result.text);
+                setMessage(true);
             }, (error) => {
-                console.log(error.text);
+                setError(true);
             });
+
+        e.target.reset();
     }
+    
     return (
         <div className='contact'>
+            {message && <div className='alert'>You successfuly send the message<div className='close' onClick={()=>setMessage(false)}><AiFillCloseCircle /></div></div>}
+            {error && <div className='alert'>Sorry there is some error please try once<div className='close' onClick={()=>setError(false)}><AiFillCloseCircle /></div></div>}
             <div className='left-contact'>
                 contact
             </div>
@@ -24,15 +36,15 @@ const Contact = () => {
                 <form ref={form} className='email-container' onSubmit={sendEmail} >
                     <div className='email-inputs'>
                         <div>
-                            <input type='text' className='input' placeholder='Your Name' /><br />
-                            <input type='email' name='user-email' className='input' placeholder='Your Email' /><br />
-                            <input type='text' className='input' placeholder='Your Phone' /><br />
+                            <input type='text' name='user_name' className='input' placeholder='Your Name' required /><br />
+                            <input type='email' name='user_email' className='input' placeholder='Your Email' /><br />
+                            <input type='text' className='input' placeholder='Your Phone' name='user_number' /><br />
                         </div>
                         <div>
-                            <textarea id="subject" name="subject" className='textarea' placeholder="Your messege" />
+                            <textarea type='message' name="message" className='textarea' placeholder="Your messege" />
                         </div>
                     </div>
-                    <div><button className='submit'>Submit</button></div>
+                    <div><button className='submit' value="Send">Submit</button></div>
                 </form>
             </div>
         </div>
